@@ -1,0 +1,649 @@
+{
+	"info": {
+		"_postman_id": "fee6b4ad-647b-4f3a-9e7f-59c1b4af609d",
+		"name": "Node.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"beyzacalgic\",\n    \"name\": \"beyza\",\n    \"surname\": \"çalgıç\",\n    \"category\": \"sweetheart\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/users/create"
+					},
+					"response": [
+						{
+							"name": "/create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"beyzacalgic\",\n    \"name\": \"beyza\",\n    \"surname\": \"çalgıç\",\n    \"category\": \"sweetheart\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/users/create"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-V/c7oET21Z6D7C2S/2vKZZpSZM8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Dec 2021 13:48:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"beyzacalgic\",\n    \"name\": \"beyza\",\n    \"surname\": \"çalgıç\",\n    \"category\": \"sweetheart\",\n    \"active\": true,\n    \"_id\": \"61c9c4101bfa5683072f33b1\",\n    \"created_at\": \"2021-12-27T13:48:00.838Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "/find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/find?search=beyzacalgic",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"find"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "beyzacalgic"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/find",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users/find?search=beyzacalgic",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users",
+										"find"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "beyzacalgic"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-aeaW43H4kZr7qYjcs4BKDIvV7z4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Dec 2021 13:55:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61c9c4101bfa5683072f33b1\",\n        \"username\": \"beyzacalgic\",\n        \"name\": \"beyza\",\n        \"surname\": \"çalgıç\",\n        \"category\": \"sweetheart\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:48:00.838Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/users/list"
+					},
+					"response": [
+						{
+							"name": "/list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/users/list"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2022"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7e6-kNeOr8STUhJVKiQzgap9v/a1veo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Dec 2021 13:59:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61c9c177e880fa4f0e9fac22\",\n        \"username\": \"ibrahimsayar\",\n        \"name\": \"ibrahim\",\n        \"surname\": \"sayar\",\n        \"category\": \"web developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:36:55.104Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c188e880fa4f0e9fac24\",\n        \"username\": \"mates\",\n        \"name\": \"muhammet\",\n        \"surname\": \"ateş\",\n        \"category\": \"web developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:37:12.862Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c1a8e880fa4f0e9fac26\",\n        \"username\": \"haliltprkk\",\n        \"name\": \"halil\",\n        \"middle_name\": \"ibrahim\",\n        \"surname\": \"toprak\",\n        \"category\": \"mobile developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:37:44.616Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c1dce880fa4f0e9fac28\",\n        \"username\": \"talhayar\",\n        \"name\": \"talha\",\n        \"surname\": \"ayar\",\n        \"category\": \"mobile developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:38:36.752Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c206e880fa4f0e9fac2a\",\n        \"username\": \"sabriayes\",\n        \"name\": \"sabri\",\n        \"surname\": \"ayeş\",\n        \"category\": \"manager\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:39:18.118Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c227e880fa4f0e9fac2c\",\n        \"username\": \"eminayar\",\n        \"name\": \"emin\",\n        \"surname\": \"ayar\",\n        \"category\": \"boss\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:39:51.089Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c238e880fa4f0e9fac2e\",\n        \"username\": \"ozkanbolukbas\",\n        \"name\": \"özkan\",\n        \"surname\": \"bölükbaş\",\n        \"category\": \"manager\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:40:08.798Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c2d5e880fa4f0e9fac30\",\n        \"username\": \"gurkansoykan\",\n        \"name\": \"gürkan\",\n        \"surname\": \"soykan\",\n        \"category\": \"mobile developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:42:45.671Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c2f5e880fa4f0e9fac32\",\n        \"username\": \"tugeceyildirim\",\n        \"name\": \"tuğçe\",\n        \"surname\": \"yıldırım\",\n        \"category\": \"qa engineer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:43:17.442Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c341e880fa4f0e9fac34\",\n        \"username\": \"esrakaya\",\n        \"name\": \"esra\",\n        \"surname\": \"kaya\",\n        \"category\": \"web developer\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:44:33.877Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c4101bfa5683072f33b1\",\n        \"username\": \"beyzacalgic\",\n        \"name\": \"beyza\",\n        \"surname\": \"çalgıç\",\n        \"category\": \"sweetheart\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:48:00.838Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/users/findOne/61c9c238e880fa4f0e9fac2e"
+					},
+					"response": [
+						{
+							"name": "/findOne",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/users/findOne/61c9c238e880fa4f0e9fac2e"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-vkN7IIVv7CyLst/hxPJ7mGZprHg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Dec 2021 14:10:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61c9c238e880fa4f0e9fac2e\",\n    \"username\": \"ozkanbolukbas\",\n    \"name\": \"özkan\",\n    \"surname\": \"bölükbaş\",\n    \"category\": \"manager\",\n    \"active\": true,\n    \"created_at\": \"2021-12-27T13:40:08.798Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "/findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/users/findOne/61c9c2d5e880fa4f0e9fac30"
+					},
+					"response": [
+						{
+							"name": "/findById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/users/findOne/61c9c2d5e880fa4f0e9fac30"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "188"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bc-2fkQp56bv2xlUgwBxVR7B1irnDk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Dec 2021 14:13:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61c9c2d5e880fa4f0e9fac30\",\n    \"username\": \"gurkansoykan\",\n    \"name\": \"gürkan\",\n    \"surname\": \"soykan\",\n    \"category\": \"mobile developer\",\n    \"active\": true,\n    \"created_at\": \"2021-12-27T13:42:45.671Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"sabriayes\",\n    \"name\": \"sabri\",\n    \"surname\": \"ayeş\",\n    \"category\": \"manager\",\n    \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/users/update/61c9c206e880fa4f0e9fac2a"
+					},
+					"response": [
+						{
+							"name": "/update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"sabriayes\",\n    \"name\": \"sabri\",\n    \"surname\": \"ayeş\",\n    \"category\": \"manager\",\n    \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/users/update/61c9c206e880fa4f0e9fac2a"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-JUOslqYzhkUusHxJzrUMT/OOSPY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Dec 2021 07:08:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"sabriayes\",\n    \"name\": \"sabri\",\n    \"surname\": \"ayeş\",\n    \"category\": \"manager\",\n    \"active\": true,\n    \"created_at\": \"2021-12-27T13:39:18.118Z\",\n    \"_id\": \"61c9c206e880fa4f0e9fac2a\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "/updateStatusAll",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/users/updateStatusAll"
+					},
+					"response": [
+						{
+							"name": "/updateStatusAll",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/users/updateStatusAll"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5e-16NgQOGNH+mYmjM5SZyW4s/Bjgg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Dec 2021 07:21:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"acknowledged\": true,\n    \"modifiedCount\": 12,\n    \"upsertedId\": null,\n    \"upsertedCount\": 0,\n    \"matchedCount\": 12\n}"
+						}
+					]
+				},
+				{
+					"name": "/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{url}}/users/delete/61c9cb1ce1d345b954e4b25d"
+					},
+					"response": [
+						{
+							"name": "/delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{url}}/users/delete/61c9cb1ce1d345b954e4b25d"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-iXttRcDm6HKv3GQwOogs9a0866c\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Dec 2021 07:29:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"61c9cb1ce1d345b954e4b25d\",\n    \"username\": \"ahmet\",\n    \"name\": \"selam\",\n    \"surname\": \"naber\",\n    \"category\": \"denemekategori\",\n    \"active\": true,\n    \"created_at\": \"2021-12-27T14:18:04.244Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "/aggregateMatchCategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\": \"manager\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/users/aggregateMatchCategory"
+					},
+					"response": [
+						{
+							"name": "/aggregateMatchCategory",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category\": \"manager\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/users/aggregateMatchCategory"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "360"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"168-PXDTTXtb95Sqh0wNr6b9hDjmn9w\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Dec 2021 07:35:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"61c9c206e880fa4f0e9fac2a\",\n        \"username\": \"sabriayes\",\n        \"name\": \"sabri\",\n        \"surname\": \"ayeş\",\n        \"category\": \"manager\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:39:18.118Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"61c9c238e880fa4f0e9fac2e\",\n        \"username\": \"ozkanbolukbas\",\n        \"name\": \"özkan\",\n        \"surname\": \"bölükbaş\",\n        \"category\": \"manager\",\n        \"active\": true,\n        \"created_at\": \"2021-12-27T13:40:08.798Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/aggregateGroupActiveUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/users/aggregateGroupActiveUsers"
+					},
+					"response": [
+						{
+							"name": "/aggregateGroupActiveUsers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/users/aggregateGroupActiveUsers"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "188"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bc-RcG3oiN4Aj03RzmkZ8/KWsrDp0s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Dec 2021 07:41:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"sweetheart\",\n        \"total\": 1\n    },\n    {\n        \"_id\": \"manager\",\n        \"total\": 2\n    },\n    {\n        \"_id\": \"boss\",\n        \"total\": 1\n    },\n    {\n        \"_id\": \"mobile developer\",\n        \"total\": 3\n    },\n    {\n        \"_id\": \"qa engineer\",\n        \"total\": 1\n    },\n    {\n        \"_id\": \"web developer\",\n        \"total\": 3\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

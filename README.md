@@ -10,8 +10,6 @@ A very basic project made with the Node.js express library, in which only user o
 
 - **Node.js** (v16.13.0+)
 - **Npm** (v8.1.0)
-- **MongoDB Compass** (v1.29.6)
-- **Postman** (v9.6.2)
 
 ### Notes
 

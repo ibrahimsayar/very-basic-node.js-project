@@ -2,7 +2,7 @@
 
 A very basic project made with the Node.js express library, in which only user operations with route are made.
 
-**Versiyon**: 0.0.0.1\
+**Version**: 0.0.0.1\
 **Constituent**: İbrahim Sayar <ibrahim.sayar@naylalabs.com>\
 **Email**: ibrahim.sayar@naylalabs.com
 
